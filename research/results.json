@@ -1,0 +1,164 @@
+{
+ "note": "CO2StoP storage units (estimates by project partners); log10 of capacity in Mt; alpha=0.1",
+ "n_units": 191,
+ "n_countries": 17,
+ "log10_capacity_sd": 1.2935356660172543,
+ "volumetric": {
+  "n": 184,
+  "median_ratio_reported_over_calc": 1.0,
+  "share_within_10pct": 0.5,
+  "share_within_factor_2": 0.7282608695652174,
+  "log10_ratio_sd": 0.6170123133529519
+ },
+ "volumetric_by_method": {
+  "From detailed site characterisation study": {
+   "n": 14,
+   "median_ratio": 1.0,
+   "share_within_10pct": 1.0
+  },
+  "Geo-techno-economic simulation (Welkenhuysen et al., submitted)": {
+   "n": 5,
+   "median_ratio": 72.42798353909464,
+   "share_within_10pct": 0.2
+  },
+  "Pore vol and storage eff coefficient": {
+   "n": 142,
+   "median_ratio": 1.0,
+   "share_within_10pct": 0.49295774647887325
+  },
+  "Pore vol and storage eff coefficient limited by trap vol": {
+   "n": 18,
+   "median_ratio": 1.0078015134916751,
+   "share_within_10pct": 0.3888888888888889
+  }
+ },
+ "screening": {
+  "ridge_logs": {
+   "random": {
+    "coverage": 0.9194331983805667,
+    "mean_width_decades": 2.1380540062814144,
+    "mae_decades": 0.49480533801224635
+   },
+   "leave_country_out": {
+    "coverage_unit_weighted": 0.8688622754491018,
+    "mean_width_decades": 2.1129328132112577,
+    "mae_decades": 0.5148018365308005,
+    "per_country": {
+     "BE": {
+      "n": 5,
+      "coverage": 0.8800000000000001,
+      "mae_decades": 0.6875067775105234
+     },
+     "BG": {
+      "n": 10,
+      "coverage": 1.0,
+      "mae_decades": 0.25508085287206655
+     },
+     "ES": {
+      "n": 44,
+      "coverage": 0.9886363636363635,
+      "mae_decades": 0.46291207542285856
+     },
+     "HR": {
+      "n": 5,
+      "coverage": 1.0,
+      "mae_decades": 0.3259912860161935
+     },
+     "HU": {
+      "n": 7,
+      "coverage": 0.12857142857142856,
+      "mae_decades": 1.25819373923436
+     },
+     "IE": {
+      "n": 8,
+      "coverage": 0.475,
+      "mae_decades": 0.9855065201026211
+     },
+     "IT": {
+      "n": 14,
+      "coverage": 0.9428571428571428,
+      "mae_decades": 0.3121190302454897
+     },
+     "SI": {
+      "n": 37,
+      "coverage": 0.981081081081081,
+      "mae_decades": 0.4207424639424205
+     },
+     "SK": {
+      "n": 37,
+      "coverage": 0.7567567567567568,
+      "mae_decades": 0.5772143408355602
+     }
+    },
+    "countries_below_0.75": [
+     "HU",
+     "IE"
+    ]
+   }
+  },
+  "boosting": {
+   "random": {
+    "coverage": 0.9209851551956816,
+    "mean_width_decades": 2.494005121471874,
+    "mae_decades": 0.514937999924202
+   },
+   "leave_country_out": {
+    "coverage_unit_weighted": 0.873053892215569,
+    "mean_width_decades": 2.42255529331729,
+    "mae_decades": 0.5875979259306937,
+    "per_country": {
+     "BE": {
+      "n": 5,
+      "coverage": 0.6799999999999999,
+      "mae_decades": 0.9469448987297232
+     },
+     "BG": {
+      "n": 10,
+      "coverage": 0.99,
+      "mae_decades": 0.3111862619376991
+     },
+     "ES": {
+      "n": 44,
+      "coverage": 0.9272727272727274,
+      "mae_decades": 0.5031343471885192
+     },
+     "HR": {
+      "n": 5,
+      "coverage": 1.0,
+      "mae_decades": 0.3804354699020704
+     },
+     "HU": {
+      "n": 7,
+      "coverage": 0.15714285714285714,
+      "mae_decades": 1.33040197398927
+     },
+     "IE": {
+      "n": 8,
+      "coverage": 0.725,
+      "mae_decades": 0.9772172014564507
+     },
+     "IT": {
+      "n": 14,
+      "coverage": 0.9928571428571429,
+      "mae_decades": 0.36609470932889654
+     },
+     "SI": {
+      "n": 37,
+      "coverage": 0.9459459459459459,
+      "mae_decades": 0.5112547231103612
+     },
+     "SK": {
+      "n": 37,
+      "coverage": 0.8351351351351353,
+      "mae_decades": 0.6775642101710981
+     }
+    },
+    "countries_below_0.75": [
+     "BE",
+     "HU",
+     "IE"
+    ]
+   }
+  }
+ }
+}
